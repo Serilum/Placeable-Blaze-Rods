@@ -25,8 +25,7 @@ public class ModNeoForge {
 
 	public static Block BLAZE_ROD_BLOCK;
 	
-	public ModNeoForge() {
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+	public ModNeoForge(IEventBus modEventBus) {
 		modEventBus.addListener(this::loadComplete);
 
 		BLOCKS.register(modEventBus);
