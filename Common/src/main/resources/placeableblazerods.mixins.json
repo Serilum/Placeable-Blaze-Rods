@@ -1,9 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.placeableblazerods.forge.mixin",
+  "package": "com.natamus.placeableblazerods.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "placeableblazerods_forge.refmap.json",
   "mixins": [
 
   ],
