@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "placeableblazerods",
-  "version": "3.7",
+  "version": "3.8",
 
   "name": "Placeable Blaze Rods",
   "description": "Makes blaze rods placeable as a block in the world, similar to end rods.",
@@ -45,7 +45,6 @@
 	  " Andrean Olgo",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " LyraKeaton",
 	  " Michael W. S.",
 	  " Tyler Behl",
 	  " XAgent"
