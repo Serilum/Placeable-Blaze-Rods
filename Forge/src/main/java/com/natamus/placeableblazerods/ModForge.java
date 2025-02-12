@@ -29,7 +29,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-        MinecraftForge.EVENT_BUS.register(new ForgeBlazeRodEvent());
+        MinecraftForge.EVENT_BUS.register(ForgeBlazeRodEvent.class);
 
 		ModCommon.setAssets();
 	}
