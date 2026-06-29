@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber
 public class ForgeBlazeRodEvent {
 	@SubscribeEvent
-	public void onBlockClick(PlayerInteractEvent.RightClickBlock e) {
+	public static void onBlockClick(PlayerInteractEvent.RightClickBlock e) {
 		BlazeRodEvent.onBlockClick(e.getLevel(), e.getEntity(), e.getHand(), e.getPos(), e.getHitVec());
 	}
 }
