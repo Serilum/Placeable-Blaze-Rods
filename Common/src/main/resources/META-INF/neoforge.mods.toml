@@ -6,7 +6,7 @@ iconFile="icon.png"
 
 [[mods]]
 modId="placeableblazerods"
-version="4.1"
+version="4.2"
 displayName="Placeable Blaze Rods"
 displayURL="https://serilum.com/mod/placeable-blaze-rods"
 authors="Rick South"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.placeableblazerods]]
     modId="collective"
     type="required"
-    versionRange="[8.39,)"
+    versionRange="[8.40,)"
     ordering="NONE"
     side="BOTH"
 

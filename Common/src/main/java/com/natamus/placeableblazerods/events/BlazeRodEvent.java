@@ -4,36 +4,43 @@ import com.natamus.placeableblazerods.data.Constants;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.component.SwingAnimation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
 
 public class BlazeRodEvent {
-	public static boolean onBlockClick(Level level, Player player, InteractionHand hand, BlockPos pos, BlockHitResult hitVec) {
-		if (level.isClientSide()) {
-			return true;
-		}
-
-		ItemStack handstack = player.getItemInHand(hand);
+	public static InteractionResult onItemUseOn(UseOnContext context) {
+		ItemStack handstack = context.getItemInHand();
 		if (!handstack.getItem().equals(Items.BLAZE_ROD)) {
-			return true;
+			return InteractionResult.PASS;
 		}
 
-		BlockPos placepos = pos.relative(hitVec.getDirection());
+		Player player = context.getPlayer();
+		if (player == null) {
+			return InteractionResult.PASS;
+		}
+
+		Level level = context.getLevel();
+		Direction direction = context.getClickedFace();
+		BlockPos pos = context.getClickedPos();
+
+		BlockPos placepos = pos.relative(direction);
 		BlockState targetstate = level.getBlockState(placepos);
 		if (!targetstate.getBlock().equals(Blocks.AIR)) {
-			return true;
+			return InteractionResult.PASS;
 		}
 
-		Direction direction = hitVec.getDirection();
-		BlockState blockState = level.getBlockState(placepos.relative(direction.getOpposite()));
+		if (level.isClientSide()) {
+			return InteractionResult.SUCCESS;
+		}
+
+		BlockState blockState = level.getBlockState(pos);
 
 		BlockState defaultBlazeRodState = Constants.BLAZE_ROD_BLOCK.defaultBlockState();
 
@@ -50,8 +57,7 @@ public class BlazeRodEvent {
 			handstack.shrink(1);
 		}
 
-		player.swing(hand, SwingAnimation.DEFAULT, true);
 		level.playSound(null, player.getX(), player.getY(), player.getZ(), defaultBlazeRodState.getSoundType().getPlaceSound(), SoundSource.NEUTRAL, 1.0F, 1.0F);
-		return true;
+		return InteractionResult.SUCCESS;
 	}
 }
