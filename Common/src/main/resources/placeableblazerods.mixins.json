@@ -4,7 +4,7 @@
   "package": "com.natamus.placeableblazerods.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-
+    "ItemMixin"
   ],
   "client": [
   

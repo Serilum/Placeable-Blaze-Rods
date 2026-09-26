@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "placeableblazerods",
-  "version": "4.1",
+  "version": "4.2",
 
   "name": "Placeable Blaze Rods",
   "description": "Makes blaze rods placeable as a block in the world, similar to end rods.",
@@ -17,13 +17,16 @@
 
   "environment": "*",
   "entrypoints": { "main": [ "com.natamus.placeableblazerods.ModFabric" ] },
+  "mixins": [
+    "placeableblazerods.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.15.0",
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=8.39"
+    "collective": ">=8.40"
   },
 
   "custom": {
@@ -45,7 +48,6 @@
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " Josh",
 	  " Linda Jansen",
 	  " MWS",
 	  " Tyler Behl"
