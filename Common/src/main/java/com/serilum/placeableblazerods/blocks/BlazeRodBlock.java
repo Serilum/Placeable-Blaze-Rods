@@ -1,4 +1,4 @@
-package com.natamus.placeableblazerods.blocks;
+package com.serilum.placeableblazerods.blocks;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;

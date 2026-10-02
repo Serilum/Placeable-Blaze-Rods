@@ -1,6 +1,6 @@
-package com.natamus.placeableblazerods.mixin;
+package com.serilum.placeableblazerods.mixin;
 
-import com.natamus.placeableblazerods.events.BlazeRodEvent;
+import com.serilum.placeableblazerods.events.BlazeRodEvent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;

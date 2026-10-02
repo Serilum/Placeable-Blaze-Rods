@@ -1,10 +1,10 @@
-package com.natamus.placeableblazerods;
+package com.serilum.placeableblazerods;
 
 
 import com.natamus.collective.services.Services;
-import com.natamus.placeableblazerods.blocks.BlazeRodBlock;
-import com.natamus.placeableblazerods.data.Constants;
-import com.natamus.placeableblazerods.util.Reference;
+import com.serilum.placeableblazerods.blocks.BlazeRodBlock;
+import com.serilum.placeableblazerods.data.Constants;
+import com.serilum.placeableblazerods.util.Reference;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
