@@ -1,4 +1,4 @@
-package com.natamus.placeableblazerods.blocks;
+package com.serilum.placeableblazerods.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
