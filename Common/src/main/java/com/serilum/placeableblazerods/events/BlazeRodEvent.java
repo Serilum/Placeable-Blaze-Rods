@@ -1,6 +1,6 @@
-package com.natamus.placeableblazerods.events;
+package com.serilum.placeableblazerods.events;
 
-import com.natamus.placeableblazerods.data.Constants;
+import com.serilum.placeableblazerods.data.Constants;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;

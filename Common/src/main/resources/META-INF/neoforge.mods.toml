@@ -1,22 +1,22 @@
 modLoader="javafml"
 loaderVersion="*"
-license="All rights reserved"
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Placeable%20Blaze%20Rods"
 iconFile="icon.png"
 
 [[mods]]
 modId="placeableblazerods"
-version="4.2"
+version="4.3"
 displayName="Placeable Blaze Rods"
 displayURL="https://serilum.com/mod/placeable-blaze-rods"
-authors="Rick South"
+authors="Serilum"
 description='''Makes blaze rods placeable as a block in the world, similar to end rods.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
 Andrean Olgo, AnyankaT, aternosorg, Cherriesaurus, Linda Jansen, MWS, Tyler Behl   
 
-If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+If you would like to contribute too, check out https://serilum.com/donate Appreciate it! <3   
 '''
 
 [[dependencies.placeableblazerods]]

@@ -1,8 +1,8 @@
-package com.natamus.placeableblazerods;
+package com.serilum.placeableblazerods;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.placeableblazerods.util.Reference;
+import com.serilum.placeableblazerods.util.Reference;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
