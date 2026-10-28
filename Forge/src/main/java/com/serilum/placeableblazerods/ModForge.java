@@ -1,10 +1,8 @@
-package com.natamus.placeableblazerods;
+package com.serilum.placeableblazerods;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.placeableblazerods.forge.events.ForgeBlazeRodEvent;
-import com.natamus.placeableblazerods.util.Reference;
-import net.minecraftforge.common.MinecraftForge;
+import com.serilum.placeableblazerods.util.Reference;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -29,8 +27,6 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-        ForgeBlazeRodEvent.registerEventsInBus();
-
 		ModCommon.setAssets();
 	}
 
